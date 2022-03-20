@@ -12,12 +12,16 @@
 
 }
 .navigation{
-
+width: 80vh;
+background-color: rgba(85, 107, 47, 0.5);
+height: 80vh;
 }
 .navigation > p{
     color:white;
     font-size: 50px;
-    -webkit-text-stroke: 1px black
+    -webkit-text-stroke: 1px black;
+    cursor: default;
+    text-align: center;
 }
 #container{
     display: flex;
@@ -26,11 +30,13 @@
     height: 80vh;
     border: 2px solid black;
     box-shadow: 0 5px 10px rgb(0 0 0 / 0.6);
+    background-color: white;
 
 
 }
 .box{
     flex-basis: 6.25%;
     height: 6.25%;
-
+    border: thin solid black;
+    box-sizing: border-box;
 }

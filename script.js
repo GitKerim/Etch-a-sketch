@@ -16,3 +16,5 @@ function randomColor() {
     var colorString = "rgb(" + r + "," + g + "," + b + ")";
     return colorString;
 }
+let title = document.querySelector('.navigation > p');
+title.addEventListener('mouseover', () => title.style.color = randomColor());
