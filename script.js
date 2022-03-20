@@ -10,10 +10,10 @@ for (let i = 0; i < (grid*grid); i++) {
 
 }
 function randomColor() {
-    var r = Math.round( Math.random() * 255);
-    var g = Math.round( Math.random() * 255);
-    var b = Math.round( Math.random() * 255);
-    var colorString = "rgb(" + r + "," + g + "," + b + ")";
+    let r = Math.round( Math.random() * 255);
+    let g = Math.round( Math.random() * 255);
+    let b = Math.round( Math.random() * 255);
+    let colorString = "rgb(" + r + "," + g + "," + b + ")";
     return colorString;
 }
 let title = document.querySelector('.navigation > p');
