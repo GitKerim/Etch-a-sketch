@@ -4,9 +4,8 @@ let grid = 16;
 for (let i = 0; i < (grid*grid); i++) {
     let container = document.querySelector('#container');   
     let box = document.createElement('div')
-    box.style.backgroundColor = randomColor();
-    box.style.height = "50px";
-    box.style.width = "50px";
+    box.addEventListener('mouseover', () => box.style.backgroundColor = randomColor())
+    box.classList.add('box');
     container.appendChild(box); 
 
 }
