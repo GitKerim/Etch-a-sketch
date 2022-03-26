@@ -1,16 +1,32 @@
 
-let grid = 16;
 let resetButton = document.querySelector('.navigation > button');
 let title = document.querySelector('.navigation > p');
 let container = document.querySelector('#container');  
+let slider = document.getElementById('slider');
+let valueSpan = document.getElementById('value');
+let grid = slider.value;
+
 
 function createGrid(){
+    container.innerHTML = ''
     for (let i = 0; i < (grid*grid); i++) {
-    let box = document.createElement('div')
-    box.setAttribute('id', 'box')
-    box.addEventListener('mouseover', () => box.style.backgroundColor = randomColor())
-    container.appendChild(box); };
+    let box = document.createElement('div');
+    let sizeValues = Number(1/grid).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:5}); 
+    box.setAttribute('id', 'box');
+    box.style.setProperty('--value', sizeValues);
+    box.addEventListener('click', () => box.style.backgroundColor = randomColor())
+    container.appendChild(box); 
+};
 }
+
+let update = () => {
+    valueSpan.innerHTML = slider.value;
+    grid = valueSpan.innerHTML;
+    createGrid();
+}
+slider.addEventListener('input', update);
+update();
+
 
 resetButton.addEventListener('click', () => {
     container.innerHTML = ''

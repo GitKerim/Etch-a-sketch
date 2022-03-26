@@ -1,4 +1,8 @@
 @import url('http://fonts.cdnfonts.com/css/pixel-art');
+:root {
+    --value: 6.25%;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -36,8 +40,9 @@ height: 80vh;
 
 }
 #box{
-    flex-basis: 6.25%;
-    height: 6.25%;
+    flex-basis: var(--value);
+    height: var(--value);
+    width: var(--value);
     border: thin solid black;
     box-sizing: border-box;
     background-color: white;
