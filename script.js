@@ -1,6 +1,6 @@
 
 let resetButton = document.querySelector('.navigation > button');
-let title = document.querySelector('.navigation > p');
+let title = document.querySelector('header > p');
 let container = document.querySelector('#container');  
 let slider = document.getElementById('slider');
 let valueSpan = document.getElementById('value');
@@ -32,6 +32,7 @@ resetButton.addEventListener('click', () => {
     container.innerHTML = ''
     createGrid();
     title.style.color = 'white';
+    grid = 16;
 });
 function randomColor() {
     let r = Math.round( Math.random() * 255);
