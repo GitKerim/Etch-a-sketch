@@ -14,7 +14,7 @@ function createGrid(){
     let sizeValues = Number(1/grid).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:5}); 
     box.setAttribute('id', 'box');
     box.style.setProperty('--value', sizeValues);
-    box.addEventListener('click', () => box.style.backgroundColor = randomColor())
+    box.addEventListener('mouseover', () => box.style.backgroundColor = randomColor())
     container.appendChild(box); 
 };
 }
