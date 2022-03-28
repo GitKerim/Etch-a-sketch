@@ -59,6 +59,7 @@ header > p{
 
 }
 
+
 #container{
     display: flex;
     flex-wrap: wrap;
@@ -77,4 +78,7 @@ header > p{
     border-left:1px solid black; ;
     box-sizing: border-box;
     background-color: white;
+}
+#clearbutton{
+    padding: 0;
 }
