@@ -79,6 +79,6 @@ header > p{
     box-sizing: border-box;
     background-color: white;
 }
-#clearbutton{
+.clearbutton{
     padding: 0;
 }
